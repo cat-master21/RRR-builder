@@ -16,6 +16,7 @@ cd /build/
 
 # Run the switch script
 bash switch.sh && apt-get purge -y --auto-remove
+cp rolling-rhino-wallpapers.xml /usr/share/gnome-background-properties/
 
 # Clean up
 update-initramfs -k all -u
