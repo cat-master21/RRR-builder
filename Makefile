@@ -22,6 +22,7 @@ enter: .edit.timestamp
 	- mv .hosts.backup edit/etc/hosts || true
 	cp edit/boot/vmlinuz extract-cd/casper/vmlinuz
 	cp edit/boot/initrd.img extract-cd/casper/initrd
+	cp build/rolling-rhino-wallpapers.xml edit/usr/share/gnome-background-properties
 	rm -rf edit/build/
 	rm -rf edit/root/.bash_history
 	rm -rf edit/root/.cache
